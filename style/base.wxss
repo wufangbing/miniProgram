@@ -1,0 +1,6 @@
+.message {
+  border: 1rpx solid rebeccapurple
+}
+.list { 
+  border: 1rpx solid blue
+}

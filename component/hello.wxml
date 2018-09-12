@@ -1,0 +1,7 @@
+<view>hello,world</view>
+<template name="hello">
+  hello
+</template>
+<template name="world">
+  world
+</template>

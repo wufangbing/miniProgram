@@ -1,0 +1,7 @@
+<template name="man">
+  man
+</template>
+<template name="woman">
+  woman
+</template>
+this is not template content

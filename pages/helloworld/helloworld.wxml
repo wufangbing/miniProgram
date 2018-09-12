@@ -1,0 +1,36 @@
+<!-- import模板引用值引用template -->
+<import src="../../component/hello.wxml"></import>
+<template is="hello"></template>
+<template is="world"></template>,
+
+<!-- include模板引用引用除了template -->
+<include src="../../component/sex.wxml"></include>
+<template is="man"></template>
+<template is="woman"></template>
+
+<!-- 直接引入的模板 -->
+<template name="tempItem">
+  <view>
+    <view>name: {{name}}</view>
+    <view>phone: {{phone}}</view>
+    <view>address: {{address}}</view>
+  </view>
+</template>
+<view>
+  <view class='message'>{{message}}</view>
+  <!-- <template is="tempItem" data="{{...users}}"></template> -->
+  <!-- 数据绑定 -->
+  <view hidden='{{!flag ? true: false}}'>
+    {{message}}
+  </view>
+  <!-- 列表渲染 -->
+  <block wx:for="{{lists}}" wx:for-item="item" wx:key="index">
+    <view>{{index}}: {{item.name}}</view>
+  </block>
+  <!-- 条件渲染 -->
+  <view class="list" style='width: 375rpx'>今天吃什么？</view>
+  <view wx:if="{{condition === 1}}">饺子</view>
+  <view wx:elif="{{condition === 2}}">米饭</view>
+  <view wx:else>面条</view>
+</view>
+
