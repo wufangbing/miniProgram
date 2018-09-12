@@ -5,8 +5,8 @@
 
 <!-- include模板引用引用除了template -->
 <include src="../../component/sex.wxml"></include>
-<template is="man"></template>
-<template is="woman"></template>
+<!-- <template is="man"></template>
+<template is="woman"></template> -->
 
 <!-- 直接引入的模板 -->
 <template name="tempItem">
@@ -32,5 +32,17 @@
   <view wx:if="{{condition === 1}}">饺子</view>
   <view wx:elif="{{condition === 2}}">米饭</view>
   <view wx:else>面条</view>
+  <view>{{m1.msg}}</view>
+  <view>{{m3.wxIndex}}</view>
 </view>
-
+<!-- wxs使用 -->
+<wxs module="m1">
+  module.exports ={
+    msg: 'this is wxs'
+  }
+ // 末尾注释
+  /*
+  console.log(123)
+</wxs>
+<!-- wsx标签引入 -->
+<wxs src='./m1.wxs' module='m3'></wxs>
