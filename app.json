@@ -1,5 +1,8 @@
 {
   "pages": [
+    "pages/base/base",
+    "pages/cover-view/index",
+    "pages/miniUi/component",
     "pages/clickPage/click",
     "pages/helloworld/helloworld"
   ]

@@ -1,0 +1,13 @@
+<view>movable</view>
+<movable-area 
+  style="width: 750rpx; height: 300px;background: red"
+ >
+  <movable-view  
+    style="width: 100px; height: 100px;background: green"
+    x="{{x}}"
+    y="{{y}}"
+    direction="all"
+    inertia="true"
+  ></movable-view>
+</movable-area>
+<button bindtap="move">click to (30px, 30px)</button>

@@ -1,0 +1,37 @@
+<text selectable="true" decode="true">b a\nse&nbsp;</text>
+<view>
+ <icon type="success" size="50" color="red"/>
+</view>
+<text>rich-text</text>
+<rich-text
+  nodes="{{nodes}}"
+  bindtap='bind'
+>
+</rich-text>
+<text>progress</text>
+<progress percent='30' active></progress>
+
+<view>form</view>
+<button 
+  size='default'
+  type='primary'
+  plain="{{false}}"
+  hover-class="active"	>
+click
+</button>
+<button 
+  open-type="contact"
+  bindcontact='getContactInfo'
+  >
+  进入会话
+  </button>
+  <button open-type="share">分享</button>
+  <button 
+    open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+    获取用户信息
+  </button>
+  <button 
+    open-type="getPhoneNumber"        bindgetphonenumber="getUserPhone">
+    获取用户号码
+  </button>
+  233000
