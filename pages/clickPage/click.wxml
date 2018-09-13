@@ -1,0 +1,44 @@
+<!-- bingtap发生冒泡，catchtap会阻止冒泡，capture-bind:tap发生捕获 -->
+<view class="contail-a" data-param="aaa" bindtap="clickA">
+  <view class="contail-b" data-param="bbb" bindtap="clickB">
+     <view class="contail-c" data-param="ccc" bindtap="clickC"></view >
+  </view>
+</view>
+<view hover-class='active'>view</view>
+
+<view>竖向滚动</view>
+<scroll-view 
+  style='height: 200px;'
+  scroll-y
+  bindscrolltoupper="upper"
+  bindscrolltolower="lower"
+  bindscroll="scroll"
+  enable-back-to-top="true"
+  scroll-with-animation="true"
+>
+<view style='background: red;height: 200px;'></view>
+<view style='background: green;height: 200px;'></view>
+<view style='background: blue;height: 200px;'></view>
+</scroll-view>
+<view>swiper</view>
+
+<view>
+  <swiper
+    indicator-dots="ture"
+    indicator-color="white"
+    indicator-active-color="grey"
+    autoplay="true"
+    interval="2000"
+    current="1"
+    duration="300"
+    bindchange="change"
+    bindanimationfinish="animationfinish"
+  >
+    <block wx:for="{{backgrounds}}" wx:for-item="item" wx:key="index">
+      <swiper-item>
+        <view style='background: {{item}}; height: 200px'>{{item}}</view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view>movable-view</view>
