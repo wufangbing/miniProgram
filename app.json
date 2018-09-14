@@ -1,9 +1,14 @@
 {
   "pages": [
+    "pages/navigator/navigator",
     "pages/base/base",
+    "pages/picker/picker",
     "pages/cover-view/index",
     "pages/miniUi/component",
     "pages/clickPage/click",
-    "pages/helloworld/helloworld"
+    "pages/helloworld/helloworld",
+    "pages/navigator/pageb/navigator",
+    "pages/navigator/pagea/navigator",
+    "pages/navigator/pagec/redirect"
   ]
 }

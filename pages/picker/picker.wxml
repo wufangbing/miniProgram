@@ -1,0 +1,47 @@
+<view>picker</view>
+ <picker bindchange="bindchange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      当前选择：{{array[index]}}
+    </view>
+  </picker>
+
+  <picker 
+  mode="multiSelector" 
+  bindchange="bindMultiPickerChange" 
+  bindcolumnchange="bindMultiPickerColumnChange" 
+  value="{{multiIndex}}" 
+  range="{{multiArray}}">
+   <view >
+    {{multiArray[0][multiIndex[0]]}}，
+    {{multiArray[1][multiIndex[1]]}}，
+    {{multiArray[2][multiIndex[2]]}}
+   </view>
+  </picker>
+
+  <picker
+    mode="time"
+    value="{{time}}"
+    bindchange="timeChange"
+  >
+  <view>选择时间: {{time}}</view>
+  </picker>
+
+  <picker
+    mode="date"
+    value="{{date}}"
+    bindchange="dateChange"
+  >
+  <view>选择日期: {{date}}</view>
+  </picker>
+
+  <picker
+    mode="region"
+    value="{{region}}"
+    bindchange="regionChange"
+    customItem='全部'
+  >
+  <view>选择地区: {{region}}</view>
+  </picker>
+
+  <view style='color: red'>picker-view</view>
+  

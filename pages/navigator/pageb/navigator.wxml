@@ -1,0 +1,4 @@
+<view>新的navigator</view>
+<navigator open-type='navigateBack'>
+  <button>返回A页面</button>
+</navigator>

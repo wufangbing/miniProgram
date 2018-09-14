@@ -1,0 +1,13 @@
+<view>navigator</view>
+<navigator url="./pageb/navigator">
+  <button>跳转新页面</button>
+</navigator>
+<navigator url="./pagec/redirect" redirect>
+  <button>在当前页面打开</button>
+</navigator>
+<navigator url="">
+  <button>切换tab页面</button>
+</navigator>
+<navigator url="./pagea/navigator" open-type='reLaunch'>
+  <button>重新加载页面</button>
+</navigator>

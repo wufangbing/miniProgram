@@ -34,4 +34,50 @@ click
     open-type="getPhoneNumber"        bindgetphonenumber="getUserPhone">
     获取用户号码
   </button>
-  233000
+  <view>checkbox</view>
+  <checkbox-group bindchange="changeCheck">
+    <checkbox 
+      wx:for="{{checkList}}"
+       wx:for-item="item" 
+       wx:key="index" 
+       value="{{item}}"
+       color="green"
+       >{{item}}</checkbox>
+  </checkbox-group>
+
+  <view>form</view>
+  <form bindsubmit="submit">
+   <switch name="switch" checked></switch>
+   <radio-group name="radio">
+    <radio value='radio1'>选项1</radio>
+    <radio value='radio2'>选项2</radio>
+   </radio-group>
+   <checkbox-group name="checkbox">
+    <checkbox 
+      wx:for="{{checkList}}"
+       wx:for-item="item" 
+       wx:key="index" 
+       value="{{item}}"
+       color="green"
+       >{{item}}</checkbox>
+    </checkbox-group>
+    <slider value='50' name="slider" show-value></slider>
+    <input name="input" placeholder='输入框'></input>
+    <button type='primary' formType='submit'>submit</button>
+    <button type='default' formType='reset'>reset</button>
+  </form>
+  <view style='color: red'>input</view>
+  {{inputValue}}
+  <input 
+    style='border: 1px solid red;'
+    value="{{inputValue}}"
+    type='text'
+    focus='{{isfocus}}'
+    maxlength='50'
+    bindinput='inputchange'
+    confirm-type="go" 
+  ></input>
+  <button bindtap="clickfocus">获取焦点</button>
+
+  <input bindinput="bindReplaceInput" placeholder="连续的两个1会变成2" adjust-position="false" />
+  <textarea  value="hello" auto-height='{{true}}'></textarea>
