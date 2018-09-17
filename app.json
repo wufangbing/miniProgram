@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/requestapi/requestapi",
     "pages/navigator/navigator",
     "pages/base/base",
     "pages/picker/picker",
